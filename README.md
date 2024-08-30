@@ -6,6 +6,7 @@
  - axios
  - discord.js
  - node-fetch
+ - systeminformation
 
 #
 ### Built for
