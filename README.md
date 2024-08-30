@@ -7,7 +7,6 @@
 
 
 ### Built for
-Ubuntu: Ubuntu 24.04 LTS
-
-Node: v18.20.4
-Npm: v10.7.0
+ - Ubuntu: Ubuntu 24.04 LTS
+ - Node: v18.20.4
+ - Npm: v10.7.0
