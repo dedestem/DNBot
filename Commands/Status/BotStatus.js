@@ -50,7 +50,7 @@ module.exports = {
             .setColor(0x0099FF)
             .setTitle('DNBot Status')
             .setTimestamp()
-            .setFooter({ text: 'Uptime robot', iconURL: 'https://davidnet.net/Assets/Logos/Logo4.png' });
+            .setFooter({ text: 'github.com/dedestem/DNBot', iconURL: 'https://davidnet.net/Assets/Logos/Logo4.png' });
 
         embed.addFields([
             { name: "Bot", value: `✅ Online`, inline: false }
