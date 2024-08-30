@@ -61,7 +61,7 @@ module.exports = {
             .setColor(0x0099FF)
             .setTitle('Disk Usage Status')
             .setTimestamp()
-            .setFooter({ text: 'github.com/dedestem/DNBot', iconURL: 'https://davidnet.net/Assets/Logos/Logo4.png' });
+            .setFooter({ text: 'Selfhosted Server #1', iconURL: 'https://davidnet.net/Assets/Logos/Logo4.png' });
 
         embed.addFields([
             { name: "Total Disk Space", value: `${totalDiskSpace} GB`, inline: false },
