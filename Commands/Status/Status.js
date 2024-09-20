@@ -4,9 +4,6 @@ const { EmbedBuilder } = require('discord.js');
 const path = require('path');
 const currentDirectory = __dirname;
 const filePath = path.join(currentDirectory, '..', '..', 'Internal', 'Uptimerobot.js');
-
-console.log('Current directory:', currentDirectory);
-console.log('Resolved path:', filePath);
 const { GetMonitors } = require(filePath);
 
 module.exports = {

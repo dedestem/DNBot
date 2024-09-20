@@ -59,15 +59,6 @@ module.exports = {
         const monitors = await getMonitors();
         
         if (monitors) {
-            console.log("Monitors Information:\n");
-            monitors.forEach(monitor => {
-                console.log(`ID: ${monitor.id}`);
-                console.log(`Name: ${monitor.friendly_name}`);
-                console.log(`Status: ${monitor.status}`);
-                console.log(`Uptime Ratio: ${monitor.uptime_ratio}`);
-                console.log(`Type: ${monitor.type}`);
-                console.log(`URL/IP: ${monitor.url}\n`);
-            });
             return monitors;
         } else {
             console.warn("No Uptime Robot monitors found or an error occurred.");
