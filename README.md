@@ -20,7 +20,7 @@
 #
 
 ### Installation Ubuntu
- - sudo apt install node
+ - sudo apt install nodejs
  - sudo apt install npm
  - sudo apt install git
 
