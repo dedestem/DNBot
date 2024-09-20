@@ -36,5 +36,4 @@
 
 #
 
- - node Init.js
- - node index.js
+ bash Run.sh
