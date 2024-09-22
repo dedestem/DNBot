@@ -1,4 +1,4 @@
 #!/bin/bash
 
-node Init.js
-node Bot.js
+screen -S DNBot -X quit
+screen -dmS DNBot node Bot.js
