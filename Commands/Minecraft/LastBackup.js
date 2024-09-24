@@ -27,7 +27,7 @@ module.exports = {
 			}
 
 			// Send the file content in the reply
-			await interaction.editReply(`File contents:\n\`\`\`${data}\`\`\``);
+			await interaction.editReply(`Latest backup:\n\`\`\`${data}\`\`\``);
 		});
 	},
 };
