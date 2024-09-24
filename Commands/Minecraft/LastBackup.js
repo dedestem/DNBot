@@ -6,7 +6,7 @@ const os = require('os');
 module.exports = {
 	// Command configuration
 	data: new SlashCommandBuilder()
-		.setName('LastMCBackup')
+		.setName('lastmcbackup')
 		.setDescription('Tells the latestbackup.txt'),
 
 	// Command execution code
