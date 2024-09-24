@@ -37,6 +37,18 @@ module.exports = {
 			return;
 		}
 
+		// Execute the stop batch file to stop the server
+		exec(`"${StopScript}"`, (error, stdout, stderr) => {
+		if (error) {
+			console.error(`Error executing STOP: ${error}`);
+			interaction.followUp('Error stopping the server.');
+			return;
+		}
+		
+		// Log output from the stop batch
+		console.log(`STOP output: ${stdout}`);
+		console.error(`STOP error output: ${stderr}`);
+
 		// Update latest_backup.txt with the provided backup name
 		fs.writeFile(latestBackupPath, "Backups/"+backupName, async (err) => {
 			if (err) {
@@ -44,18 +56,6 @@ module.exports = {
 				await interaction.editReply('Error updating the latest backup.');
 				return;
 			}
-
-			// Execute the stop batch file to stop the server
-			exec(`"${StopScript}"`, (error, stdout, stderr) => {
-				if (error) {
-					console.error(`Error executing STOP: ${error}`);
-					interaction.followUp('Error stopping the server.');
-					return;
-				}
-
-				// Log output from the stop batch
-				console.log(`STOP output: ${stdout}`);
-				console.error(`STOP error output: ${stderr}`);
 
 				// After stopping, execute the load backup batch file
 				exec(`"${StartScript}"`, (error, stdout, stderr) => {
