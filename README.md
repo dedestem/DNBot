@@ -8,6 +8,8 @@
  - node-fetch
  - systeminformation
 
+ - sudo apt install screen
+
 #
 ### Built for
 
